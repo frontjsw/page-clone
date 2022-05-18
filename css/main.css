@@ -1,0 +1,13 @@
+.main_vis {
+  width: 100%;
+  height: 100vh;
+}
+.main_vis .slide_img1 {
+  background: url(../img/main_vis1.jpg) no-repeat center/cover;
+}
+.main_vis .slide_img2 {
+  background: url(../img/main_vis2.png) no-repeat center/cover;
+}
+.main_vis .slide_img3 {
+  background: url(../img/main_vis3.png) no-repeat center/cover;
+}
