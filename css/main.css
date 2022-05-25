@@ -133,6 +133,7 @@
   padding: 5% 0 0 10%;
   margin: 200px 0;
   position: relative;
+  overflow: hidden;
 }
 .content3 .con_wrapper {
   width: 120%;

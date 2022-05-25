@@ -54,16 +54,10 @@ window.onload = function () {
     }
   });
   var con1Swiper = new Swiper(".con_slide1", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination"
-    }
+    loop: true
   });
   var con2Swiper = new Swiper(".con_slide2", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination"
-    }
+    loop: true
   });
   var con3Swiper = new Swiper(".con_slide3", {
     loop: true,
