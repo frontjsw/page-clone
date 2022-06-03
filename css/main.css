@@ -139,6 +139,16 @@
   display: flex;
   justify-content: space-between;
 }
+.content3 .con_wrapper .tit_box {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.content3 .con_wrapper .tit_box .tit_wrap {
+  font-size: 5rem;
+  line-height: 6rem;
+  font-weight: 700;
+}
 .content3 .con_wrapper .swiper {
   width: 30%;
   margin: 0 0;
