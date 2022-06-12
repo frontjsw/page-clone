@@ -26,7 +26,7 @@ header {
     .logo {
       position: absolute;
       top: 50%;
-      left: 5%;
+      left: 10%;
       transform: translateY(-50%);
       width: 9rem;
       height: 3.2rem;
@@ -36,7 +36,7 @@ header {
     .utill {
       position: absolute;
       top: 50%;
-      right: 5%;
+      right: 10%;
       transform: translateY(-50%);
       height: 4rem;
       li {
@@ -50,6 +50,9 @@ header.on {
   .header_wrap {
     background-color: #fff;
     color: #000;
+    .sub_back {
+      border-bottom: 1px solid #ccc;
+    }
     .logo {
       background: url(../img/logo-color.svg) no-repeat center / cover;
     }
@@ -72,6 +75,7 @@ header.on {
       position: absolute;
       top: 10rem;
       left: 0;
+      width: 100%;
       visibility: hidden;
       opacity: 0;
       transition: 0.6s;
@@ -95,6 +99,7 @@ header.on {
   .sub_gnb {
     visibility: visible;
     opacity: 1;
+
     a {
       transform: translateY(0);
     }

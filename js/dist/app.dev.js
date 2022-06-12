@@ -2,16 +2,29 @@
 
 window.onload = function () {
   var header = document.querySelector("header");
+  var mainVis = document.querySelector(".main_vis").offsetHeight;
+  window.addEventListener("scroll", function () {
+    var winY = window.scrollY;
+
+    if (winY > mainVis) {
+      header.classList.add("on");
+    } else {
+      header.classList.remove("on");
+    }
+  });
   header.addEventListener("mouseover", function () {
     header.classList.add("on");
   });
   header.addEventListener("mouseleave", function () {
-    header.classList.remove("on");
+    var winY = window.scrollY;
+
+    if (winY < mainVis) {
+      header.classList.remove("on");
+    }
   });
-  var gnb = document.querySelectorAll(".gnb > li");
+  var gnbLi = document.querySelectorAll(".gnb > li");
   var subGnb = document.querySelector(".sub_gnb");
   var subBack = document.querySelector(".sub_back");
-  gnb.forEach(function (element) {});
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;
   var _iteratorError = undefined;
@@ -29,7 +42,7 @@ window.onload = function () {
       });
     };
 
-    for (var _iterator = gnb[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    for (var _iterator = gnbLi[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
       _loop();
     }
   } catch (err) {

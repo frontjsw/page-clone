@@ -1,19 +1,30 @@
 window.onload = function () {
   const header = document.querySelector("header");
+  const mainVis = document.querySelector(".main_vis").offsetHeight;
 
+  window.addEventListener("scroll", () => {
+    const winY = window.scrollY;
+    if (winY > mainVis) {
+      header.classList.add("on");
+    } else {
+      header.classList.remove("on");
+    }
+  });
   header.addEventListener("mouseover", () => {
     header.classList.add("on");
   });
   header.addEventListener("mouseleave", () => {
-    header.classList.remove("on");
+    const winY = window.scrollY;
+    if (winY < mainVis) {
+      header.classList.remove("on");
+    }
   });
 
-  const gnb = document.querySelectorAll(".gnb > li");
+  const gnbLi = document.querySelectorAll(".gnb > li");
   const subGnb = document.querySelector(".sub_gnb");
   const subBack = document.querySelector(".sub_back");
-  gnb.forEach((element) => {});
 
-  for (const list of gnb) {
+  for (const list of gnbLi) {
     list.addEventListener("mouseover", () => {
       list.classList.add("on");
       subBack.style.cssText = "visibility:visible; opacity:1;";
